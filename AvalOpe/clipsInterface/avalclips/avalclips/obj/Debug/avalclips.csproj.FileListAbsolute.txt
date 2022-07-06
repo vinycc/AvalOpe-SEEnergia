@@ -1,0 +1,14 @@
+c:\users\alex rese\documents\visual studio 2015\Projects\avalclips\avalclips\bin\Debug\avalclips.exe.config
+c:\users\alex rese\documents\visual studio 2015\Projects\avalclips\avalclips\bin\Debug\avalclips.exe
+c:\users\alex rese\documents\visual studio 2015\Projects\avalclips\avalclips\bin\Debug\avalclips.pdb
+c:\users\alex rese\documents\visual studio 2015\Projects\avalclips\avalclips\bin\Debug\Mommosoft.ExpertSystem.dll
+c:\users\alex rese\documents\visual studio 2015\Projects\avalclips\avalclips\obj\Debug\avalclips.csprojResolveAssemblyReference.cache
+c:\users\alex rese\documents\visual studio 2015\Projects\avalclips\avalclips\obj\Debug\avalclips.exe
+c:\users\alex rese\documents\visual studio 2015\Projects\avalclips\avalclips\obj\Debug\avalclips.pdb
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\avalclips\avalclips\bin\Debug\avalclips.exe.config
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\avalclips\avalclips\bin\Debug\avalclips.exe
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\avalclips\avalclips\bin\Debug\avalclips.pdb
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\avalclips\avalclips\bin\Debug\Mommosoft.ExpertSystem.dll
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\avalclips\avalclips\obj\Debug\avalclips.csprojResolveAssemblyReference.cache
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\avalclips\avalclips\obj\Debug\avalclips.exe
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\avalclips\avalclips\obj\Debug\avalclips.pdb

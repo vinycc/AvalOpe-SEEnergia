@@ -1,0 +1,442 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AvalOpe"
+             xmlns:System="clr-namespace:System;assembly=mscorlib" x:Class="AvalOpe.MatrizMLE"
+             mc:Ignorable="d" Height="332.707" Width="662.03">
+    <FlowDocumentScrollViewer>
+
+        <FlowDocument FontFamily="Cambria" FontSize="14">
+            <Paragraph>Matriz Lógico-Estrutural:</Paragraph>
+            <Table x:Name="tabela">
+                <Table.Columns>
+                    <TableColumn Width="16*"/>
+                    <TableColumn Width="8*"/>
+                    <TableColumn Width="8*"/>
+                    <TableColumn Width="8*"/>
+                    <TableColumn Width="8*"/>
+                    <TableColumn Width="8*"/>
+                    <TableColumn Width="8*"/>
+                    <TableColumn Width="8*"/>
+                    <TableColumn Width="8*"/>
+                    <TableColumn Width="8*"/>
+                    <TableColumn Width="8*"/>
+                </Table.Columns>
+
+                <TableRowGroup Background="LightGray" FontWeight="Bold">
+                    <TableRow>
+                        <TableCell>
+                            <Paragraph></Paragraph>
+                        </TableCell>
+                        <TableCell ColumnSpan="10" TextAlignment="Center">
+                            <Paragraph>Nó com Defeito</Paragraph>
+                        </TableCell>
+                    </TableRow>
+                </TableRowGroup>
+
+                <TableRowGroup FontWeight="Bold" FontSize="14px">
+                    <TableRow>
+                        <TableCell>
+                            <Paragraph>Nó Atingido</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>1</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>2</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>3</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>4</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>5</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>6</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>7</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>8</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>9</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>10</Paragraph>
+                        </TableCell>
+                    </TableRow>
+                </TableRowGroup>
+
+                <TableRowGroup x:Name="GrupoTabela" FontFamily="Verdana" FontSize="12">
+                    <TableRow>
+                        <TableCell FontWeight="Bold">
+                            <Paragraph>1</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR1</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR2</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR3</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR4</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR5</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell FontWeight="Bold">
+                            <Paragraph>2</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR1</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR2</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR3</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR4</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR5</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell FontWeight="Bold">
+                            <Paragraph>3</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR1</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR2</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR3</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR4</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR5</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell FontWeight="Bold">
+                            <Paragraph>4</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR1</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR2</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR3</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR4</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR5</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell FontWeight="Bold">
+                            <Paragraph>5</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR1</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR2</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR3</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR4</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR5</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell FontWeight="Bold">
+                            <Paragraph>6</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR1</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR2</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR3</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR4</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR5</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR6</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR7</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell FontWeight="Bold">
+                            <Paragraph>7</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR1</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR2</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR3</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR4</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR5</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR6</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR7</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell FontWeight="Bold">
+                            <Paragraph>8</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR1</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR2</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR3</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR4</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR5</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR8</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell FontWeight="Bold">
+                            <Paragraph>9</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR1</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR2</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR3</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR4</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR5</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR9</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR10</Paragraph>
+                        </TableCell>
+                    </TableRow>
+
+                    <TableRow>
+                        <TableCell FontWeight="Bold">
+                            <Paragraph>10</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR1</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR2</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR3</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR4</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR5</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>0</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR9</Paragraph>
+                        </TableCell>
+                        <TableCell>
+                            <Paragraph>TR10</Paragraph>
+                        </TableCell>
+                    </TableRow>
+                    
+                </TableRowGroup>
+            </Table>
+        </FlowDocument>
+    </FlowDocumentScrollViewer>
+</UserControl>

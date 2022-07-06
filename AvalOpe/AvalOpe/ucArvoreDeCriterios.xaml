@@ -1,0 +1,110 @@
+﻿<UserControl x:Name="ucArvore" x:Class="AvalOpe.ucArvoreDeCriterios"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:AvalOpe"
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="1160">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Simple Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <Viewbox>
+        <Grid Width="1143" >
+            <Path Data="M941.33333,437.44708 L941.33333,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28.5" Margin="1100.039,282.447,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <local:ucFolhaExtra x:Name="criterioExtra3" HorizontalAlignment="Left" Margin="1057,305,0,0" VerticalAlignment="Top"/>
+            <local:ucFolhaArvore x:Name="no01" Width="105" Margin="112,80,0,0" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top"/>
+            <local:ucFolhaArvore x:Name="criterioCOMPETENCIA" Width="105" Margin="306,80,0,0" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" MouseDoubleClick="no02_MouseDoubleClick"/>
+            <local:ucFolhaArvore x:Name="no02" Margin="514,80,0,0" Height="74" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <local:ucFolhaArvore x:Name="no03" Margin="718,80,0,0" Height="74" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <local:ucFolhaArvore x:Name="no04" Margin="912,80,0,0" Height="74" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <local:ucFolhaArvore x:Name="criterioMAGNITUDETENSAO" Width="105" Margin="2,195,0,0" HorizontalAlignment="Left" Height="74" VerticalAlignment="Top" MouseDoubleClick="criterio01_MouseDoubleClick"/>
+            <local:ucFolhaArvore x:Name="criterioVARIACAOLINHA" Width="105" Height="74" Margin="112,195,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" MouseDoubleClick="criterio02_MouseDoubleClick"/>
+            <local:ucFolhaExtra x:Name="criterioExtra1" HorizontalAlignment="Left" Margin="223,195,0,0" VerticalAlignment="Top"/>
+
+            <local:ucFolhaArvore x:Name="criterioHABILIDADE" Height="74" Margin="142,422,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <local:ucFolhaArvore x:Name="criterioCONHECIMENTO" Height="74" Margin="252,422,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <local:ucFolhaArvore x:Name="criterioATITUDE" Height="74" Margin="362,422,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <local:ucFolhaArvore x:Name="criterioSTRESS" Height="74" Margin="472,422,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="79"/>
+            <local:ucFolhaArvore x:Name="criterioEUSD" Width="105" Height="74" Margin="405,195,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <local:ucFolhaArvore x:Name="criterioDMIC" Height="74" Margin="515,195,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <local:ucFolhaExtra x:Name="criterioExtra2" HorizontalAlignment="Left" Margin="626,196,0,0" VerticalAlignment="Top" Width="79" Height="74"/>
+            <local:ucFolhaArvore x:Name="criterioSEQUENCIACHAVEAMENTO" Height="74" Margin="801,195,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105" MouseDoubleClick="criterio12_MouseDoubleClick"/>
+            <local:ucFolhaArvore x:Name="criterioSEGURANCA" Height="74" Margin="912,195,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105" MouseDoubleClick="criterio13_MouseDoubleClick"/>
+            <local:ucFolhaExtra x:Name="criterioExtra4" HorizontalAlignment="Left" Margin="1023,195,0,0" VerticalAlignment="Top"/>
+
+            <Path Data="M130,151 L443.5,151 657.5,151 869.5,151 657.5,151 657.5,182.5" Height="1" Margin="169.156,58.5,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Width="795"/>
+            <Path Data="M0.5,0.5 L0.5,31.5" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="23" Margin="169.156,57.5,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M874,151 L874,182.5" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="23" Margin="963.5,58.5,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M878,256.1135 L878,290.61399" HorizontalAlignment="Left" Margin="966.5,172.613,0,0" Stretch="Fill" Stroke="Black" Width="1" Height="23" VerticalAlignment="Top"/>
+            <Path Data="M198.5,292.11374 L69.5,292.11374" Height="1" Margin="57.168,172.614,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Width="210"/>
+            <Path Data="M570.5,291.11374 L319.5,291.11374" Height="1" Margin="459.198,173.114,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Width="208"/>
+            <Path Data="M570,291.11374 L570,324.11299" HorizontalAlignment="Left" Height="23" Margin="568,172.614,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M446,291.11374 L446,324.61299" HorizontalAlignment="Left" Height="23" Margin="459.334,172.614,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M878,291.11374 L878,324.11299" HorizontalAlignment="Left" Height="23" Margin="854.178,173.114,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M378,436.78041 L941.5,436.78041" Fill="#FFF4F4F5" Height="1" Margin="554.549,282.28,-3.049,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Width="546.0"/>
+            <Path Data="M800.66667,437.44708 L800.66667,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28.5" Margin="999.704,282.447,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M800.66667,437.44708 L800.66667,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28.5" Margin="665.24,282.447,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M800.66667,437.44708 L800.66667,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28.5" Margin="554.838,282.447,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M800.66667,437.44708 L800.66667,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28.5" Margin="886.561,282.447,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M133,256.11374 L133,291.61348" HorizontalAlignment="Left" Margin="358.426,153.114,0,0" Stretch="Fill" Stroke="Black" Width="1" Height="241.5" VerticalAlignment="Top"/>
+            <Path Data="M800.66667,437.44708 L800.66667,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28.5" Margin="512.434,393.947,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M800.66667,437.44708 L800.66667,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28.5" Margin="416.705,394.447,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M800.66667,437.44708 L800.66667,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28.5" Margin="306.638,394.447,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M800.66667,437.44708 L800.66667,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28.5" Margin="196.404,394.447,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M378,436.78041 L941.5,436.78041" Fill="#FFF4F4F5" Height="1" Margin="196.178,394.28,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Width="316.5"/>
+            <Path Data="M878,291.11374 L878,324.11299" HorizontalAlignment="Left" Height="23" Margin="1065.999,172.614,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M800.66667,437.44708 L800.66667,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28.5" Margin="770.227,282.447,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M570,291.11374 L570,324.11299" HorizontalAlignment="Left" Height="23" Margin="666.5,172.614,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Button x:Name="button" HorizontalAlignment="Left" Margin="289,198,0,0" VerticalAlignment="Top" Width="15" Height="15" Click="button_Click" BorderThickness="0" Background="{x:Null}">
+                <Image x:Name="imgExtra01" Source="pack://siteoforigin:,,,/Resources/add.png"/>
+            </Button>
+            <Button x:Name="button_Copy" HorizontalAlignment="Left" Margin="687,199,0,0" VerticalAlignment="Top" Width="15" Height="15" BorderThickness="0" Background="{x:Null}" Click="button_Copy_Click">
+                <Image x:Name="imgExtra02" Source="pack://siteoforigin:,,,/Resources/add.png"/>
+            </Button>
+            <Button x:Name="button_Copy1" HorizontalAlignment="Left" Margin="1093,197,0,0" VerticalAlignment="Top" Width="15" Height="15" BorderThickness="0" Background="{x:Null}" Click="button_Copy1_Click">
+                <Image x:Name="imgExtra04" Source="pack://siteoforigin:,,,/Resources/add.png"/>
+            </Button>
+            <Button x:Name="button_Copy2" HorizontalAlignment="Left" Margin="1126,312,0,0" VerticalAlignment="Top" Width="15" Height="15" BorderThickness="0" Background="{x:Null}" Click="button_Copy2_Click">
+                <Image x:Name="imgExtra03" Source="pack://siteoforigin:,,,/Resources/add.png"/>
+            </Button>
+            <local:ucFolhaArvore x:Name="criterioDMChave" Height="74" Margin="705,422,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <local:ucFolhaArvore x:Name="criterioDMTransformador" Height="74" Margin="816,422,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <local:ucFolhaArvore x:Name="criterioDMReligador" Height="74" Margin="927,422,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <local:ucFolhaArvore x:Name="criterioDMDisjuntor" Height="74" Margin="1037,422,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <Path Data="M570,291.11374 L570,324.11299" HorizontalAlignment="Left" Height="23" Margin="568,153.114,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M570.5,291.11374 L319.5,291.11374" Height="1" Margin="855.198,172.614,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Width="212"/>
+            <Path Data="M0.5,0.5 L0.5,31.5" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="23" Margin="359.156,57.5,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M0.5,0.5 L0.5,31.5" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="23" Margin="568.156,57.5,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M0.5,0.5 L0.5,31.5" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="23" Margin="770.656,57.5,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M0.5,0.5 L0.5,31.5" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="23" Margin="568.156,42.5,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M446,291.11374 L446,324.61299" HorizontalAlignment="Left" Height="23" Margin="265.834,172.614,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M446,291.11374 L446,324.61299" HorizontalAlignment="Left" Height="23" Margin="164.334,172.614,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M446,291.11374 L446,324.61299" HorizontalAlignment="Left" Height="23" Margin="57.334,172.614,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M446,291.11374 L446,324.61299" HorizontalAlignment="Left" Height="23" Margin="164.334,153.114,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M800.66667,437.44708 L800.66667,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28.5" Margin="1087.434,393.947,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M800.66667,437.44708 L800.66667,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28.5" Margin="978.705,394.447,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M800.66667,437.44708 L800.66667,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28.5" Margin="868.638,394.447,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M800.66667,437.44708 L800.66667,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="28.5" Margin="758.404,394.447,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+            <Path Data="M378,436.78041 L941.5,436.78041" Fill="#FFF4F4F5" Height="1" Margin="758.178,394.28,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" HorizontalAlignment="Left" Width="329.5"/>
+            <local:ucFolhaArvore x:Name="criterioDEC" Height="74" Margin="391,305,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <local:ucFolhaArvore x:Name="criterioFEC" Height="74" Margin="502,305,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <local:ucFolhaArvore x:Name="criterioCONSUMIDORES" Height="74" Margin="613,305,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <local:ucFolhaArvore x:Name="criterioTEMPOFILA" Height="74" Margin="725,305,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105" MouseDoubleClick="criterio09_MouseDoubleClick"/>
+            <local:ucFolhaArvore x:Name="criterioCONSUMIDORESPRIORITARIOS" Height="74" Margin="836,305,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <local:ucFolhaArvore x:Name="criterioDM" Height="74" Margin="947,305,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="105"/>
+            <Path Data="M133,256.11374 L133,291.61348" HorizontalAlignment="Left" Margin="769.792,153.114,0,0" Stretch="Fill" Stroke="Black" Width="1" Height="129" VerticalAlignment="Top"/>
+            <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="47" Margin="515,0,0,0" VerticalAlignment="Top" Width="104" Background="LightSteelBlue">
+                <TextBlock x:Name="Titulo" Canvas.Top="0" Text="Avaliação de Operadores" FontSize="12" MaxWidth="120"  Height="33" MaxHeight="47" FontWeight="Bold"  TextAlignment="Center" TextWrapping="Wrap" Margin="-1,5,-1,7" VerticalAlignment="Center"/>
+            </Border>
+            <Path Data="M800.66667,437.44708 L800.66667,464.94667" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="17" Margin="999.704,378.247,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1"/>
+
+
+
+        </Grid>
+    </Viewbox>
+</UserControl>

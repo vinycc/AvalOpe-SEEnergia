@@ -1,0 +1,7 @@
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\bin\Release\OpenFile.dll
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\bin\Release\OpenFile.pdb
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\bin\Release\Excel.dll
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\bin\Release\Excel.xml
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\obj\Release\OpenFile.csprojResolveAssemblyReference.cache
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\obj\Release\OpenFile.dll
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\obj\Release\OpenFile.pdb

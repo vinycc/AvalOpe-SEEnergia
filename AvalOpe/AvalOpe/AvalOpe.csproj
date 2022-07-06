@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{547E1567-3678-4462-A188-C97CA9A4243F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AvalOpe</RootNamespace>
+    <AssemblyName>AvalOpe</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FuzzyFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\FuzzyFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphSharp">
+      <HintPath>..\..\..\..\..\Downloads\GraphSharp-v1.0-release\Release\GraphSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="GraphSharp.Controls">
+      <HintPath>..\..\..\..\..\Downloads\GraphSharp-v1.0-release\Release\GraphSharp.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="LINQtoCSV, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\LINQtoCSV.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.GLEE">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Research\GLEE\bin\Microsoft.GLEE.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.GLEE.Drawing">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Research\GLEE\bin\Microsoft.GLEE.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.GLEE.GraphViewerGDI">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Research\GLEE\bin\Microsoft.GLEE.GraphViewerGDI.dll</HintPath>
+    </Reference>
+    <Reference Include="Mommosoft.ExpertSystem">
+      <HintPath>..\Mommosoft.ExpertSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="PolyLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PolyLib.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="QuickGraph">
+      <HintPath>..\..\..\..\..\Downloads\GraphSharp-v1.0-release\Release\QuickGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\..\..\..\..\Downloads\Install\SQLite_for_.NET_104\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WPFExtensions">
+      <HintPath>..\..\..\..\..\Downloads\GraphSharp-v1.0-release\Release\WPFExtensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clipsInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clipsInterface.Designer.cs">
+      <DependentUpon>clipsInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Criterio.cs" />
+    <Compile Include="DataGridViewProgressColumn .cs" />
+    <Compile Include="Enumeracoes.cs" />
+    <Compile Include="FormAdicionarCriterio.cs" />
+    <Compile Include="FormAdicionarCriterio.Designer.cs">
+      <DependentUpon>FormAdicionarCriterio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdicionarManobraParametro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdicionarManobraParametro.Designer.cs">
+      <DependentUpon>FormAdicionarManobraParametro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormArvoreSubtransmissao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormArvoreSubtransmissao.Designer.cs">
+      <DependentUpon>FormArvoreSubtransmissao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormArvoreCriterios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormArvoreCriterios.Designer.cs">
+      <DependentUpon>FormArvoreCriterios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioCompetenciaProfissional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioCompetenciaProfissional.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioCompetenciaProfissional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioTempoFila.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioTempoFila.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioTempoFila.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioVariacaoCarregamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioVariacaoCarregamento.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioVariacaoCarregamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioMagnitudeTensao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioMagnitudeTensao.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioMagnitudeTensao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioSegurancaRede.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioSegurancaRede.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioSegurancaRede.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioSequenciaChaveamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioSequenciaChaveamento.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioSequenciaChaveamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioCompetenciaProfissional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioCompetenciaProfissional.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioCompetenciaProfissional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioSequenciaRestabelecimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioSequenciaRestabelecimento.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioSequenciaRestabelecimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioDM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioDM.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioDM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioFecEvitado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioFecEvitado.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioFecEvitado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioCHI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioCHI.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioCHI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioMust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioMust.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioMust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioSegurancaRede.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioSegurancaRede.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioSegurancaRede.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioLimiteCarregamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioLimiteCarregamento.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioLimiteCarregamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioLimiteTensao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioLimiteTensao.Designer.cs">
+      <DependentUpon>FormAvaliarCriterioLimiteTensao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditarCriterios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditarCriterios.Designer.cs">
+      <DependentUpon>FormEditarCriterios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEstatistica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEstatistica.Designer.cs">
+      <DependentUpon>FormEstatistica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFluxoPotencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFluxoPotencia.Designer.cs">
+      <DependentUpon>FormFluxoPotencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInicio.Designer.cs">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInterface.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInterface.Designer.cs">
+      <DependentUpon>FormInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAvaliacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAvaliacao.Designer.cs">
+      <DependentUpon>FormAvaliacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastroTreinamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroTreinamento.Designer.cs">
+      <DependentUpon>FormCadastroTreinamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormManual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormManual.Designer.cs">
+      <DependentUpon>FormManual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMLE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMLE.Designer.cs">
+      <DependentUpon>FormMLE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReconfiguracaoRede.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReconfiguracaoRede.Designer.cs">
+      <DependentUpon>FormReconfiguracaoRede.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReordenarCriterios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReordenarCriterios.Designer.cs">
+      <DependentUpon>FormReordenarCriterios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdicionarManobra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdicionarManobra.Designer.cs">
+      <DependentUpon>FormAdicionarManobra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelecionarAvaliacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelecionarAvaliacao.Designer.cs">
+      <DependentUpon>FormSelecionarAvaliacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelecionarTempo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelecionarTempo.Designer.cs">
+      <DependentUpon>FormSelecionarTempo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelecionarLinhaDefeito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelecionarLinhaDefeito.Designer.cs">
+      <DependentUpon>FormSelecionarLinhaDefeito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTeste1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTeste1.Designer.cs">
+      <DependentUpon>FormTeste1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRelatorioAvaliacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRelatorioAvaliacao.Designer.cs">
+      <DependentUpon>FormRelatorioAvaliacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTesteFuzzy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTesteFuzzy.Designer.cs">
+      <DependentUpon>FormTesteFuzzy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTesteGrafo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTesteGrafo.Designer.cs">
+      <DependentUpon>FormTesteGrafo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manobra.cs" />
+    <Compile Include="MatrizMLE.xaml.cs">
+      <DependentUpon>MatrizMLE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucArvoreDeCriterios.xaml.cs">
+      <DependentUpon>ucArvoreDeCriterios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucDiagramaUnifilar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDiagramaUnifilar.Designer.cs">
+      <DependentUpon>ucDiagramaUnifilar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucFolhaExtra.xaml.cs">
+      <DependentUpon>ucFolhaExtra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucFolhaArvore.xaml.cs">
+      <DependentUpon>ucFolhaArvore.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ucMatriz.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucMatriz.Designer.cs">
+      <DependentUpon>ucMatriz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTesteGrafo.xaml.cs">
+      <DependentUpon>ucTesteGrafo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsWPF\ucArvoreSubtransmissao.xaml.cs">
+      <DependentUpon>ucArvoreSubtransmissao.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsWPF\ucTextBoxReadOnly.xaml.cs">
+      <DependentUpon>ucTextBoxReadOnly.xaml</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="clipsInterface.en.resx">
+      <DependentUpon>clipsInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clipsInterface.resx">
+      <DependentUpon>clipsInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdicionarCriterio.resx">
+      <DependentUpon>FormAdicionarCriterio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdicionarManobra.en.resx">
+      <DependentUpon>FormAdicionarManobra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdicionarManobraParametro.en.resx">
+      <DependentUpon>FormAdicionarManobraParametro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdicionarManobraParametro.resx">
+      <DependentUpon>FormAdicionarManobraParametro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormArvoreCriterios.en.resx">
+      <DependentUpon>FormArvoreCriterios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormArvoreSubtransmissao.en.resx">
+      <DependentUpon>FormArvoreSubtransmissao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormArvoreSubtransmissao.resx">
+      <DependentUpon>FormArvoreSubtransmissao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormArvoreCriterios.resx">
+      <DependentUpon>FormArvoreCriterios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacao.en.resx">
+      <DependentUpon>FormAvaliacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioCompetenciaProfissional.en.resx">
+      <DependentUpon>FormAvaliarCriterioCompetenciaProfissional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioCompetenciaProfissional.resx">
+      <DependentUpon>FormAvaliarCriterioCompetenciaProfissional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioTempoFila.en.resx">
+      <DependentUpon>FormAvaliarCriterioTempoFila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioTempoFila.resx">
+      <DependentUpon>FormAvaliarCriterioTempoFila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioVariacaoCarregamento.en.resx">
+      <DependentUpon>FormAvaliarCriterioVariacaoCarregamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioVariacaoCarregamento.resx">
+      <DependentUpon>FormAvaliarCriterioVariacaoCarregamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioMagnitudeTensao.en.resx">
+      <DependentUpon>FormAvaliarCriterioMagnitudeTensao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioMagnitudeTensao.resx">
+      <DependentUpon>FormAvaliarCriterioMagnitudeTensao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioSegurancaRede.en.resx">
+      <DependentUpon>FormAvaliarCriterioSegurancaRede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioSegurancaRede.resx">
+      <DependentUpon>FormAvaliarCriterioSegurancaRede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioSequenciaChaveamento.en.resx">
+      <DependentUpon>FormAvaliarCriterioSequenciaChaveamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioDist\FormAvaliarCriterioSequenciaChaveamento.resx">
+      <DependentUpon>FormAvaliarCriterioSequenciaChaveamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioCHI.en.resx">
+      <DependentUpon>FormAvaliarCriterioCHI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioCompetenciaProfissional.en.resx">
+      <DependentUpon>FormAvaliarCriterioCompetenciaProfissional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioCompetenciaProfissional.resx">
+      <DependentUpon>FormAvaliarCriterioCompetenciaProfissional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioDM.en.resx">
+      <DependentUpon>FormAvaliarCriterioDM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioFecEvitado.en.resx">
+      <DependentUpon>FormAvaliarCriterioFecEvitado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioLimiteCarregamento.en.resx">
+      <DependentUpon>FormAvaliarCriterioLimiteCarregamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioLimiteTensao.en.resx">
+      <DependentUpon>FormAvaliarCriterioLimiteTensao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioMust.en.resx">
+      <DependentUpon>FormAvaliarCriterioMust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioSegurancaRede.en.resx">
+      <DependentUpon>FormAvaliarCriterioSegurancaRede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioSequenciaRestabelecimento.en.resx">
+      <DependentUpon>FormAvaliarCriterioSequenciaRestabelecimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioSequenciaRestabelecimento.resx">
+      <DependentUpon>FormAvaliarCriterioSequenciaRestabelecimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioDM.resx">
+      <DependentUpon>FormAvaliarCriterioDM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioFecEvitado.resx">
+      <DependentUpon>FormAvaliarCriterioFecEvitado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioCHI.resx">
+      <DependentUpon>FormAvaliarCriterioCHI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioMust.resx">
+      <DependentUpon>FormAvaliarCriterioMust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioSegurancaRede.resx">
+      <DependentUpon>FormAvaliarCriterioSegurancaRede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioLimiteCarregamento.resx">
+      <DependentUpon>FormAvaliarCriterioLimiteCarregamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacaoCriterioSub\FormAvaliarCriterioLimiteTensao.resx">
+      <DependentUpon>FormAvaliarCriterioLimiteTensao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroTreinamento.en.resx">
+      <DependentUpon>FormCadastroTreinamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditarCriterios.resx">
+      <DependentUpon>FormEditarCriterios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEstatistica.en.resx">
+      <DependentUpon>FormEstatistica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEstatistica.resx">
+      <DependentUpon>FormEstatistica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFluxoPotencia.en.resx">
+      <DependentUpon>FormFluxoPotencia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFluxoPotencia.resx">
+      <DependentUpon>FormFluxoPotencia.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInicio.en.resx">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInicio.resx">
+      <DependentUpon>FormInicio.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInterface.en.resx">
+      <DependentUpon>FormInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInterface.resx">
+      <DependentUpon>FormInterface.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAvaliacao.resx">
+      <DependentUpon>FormAvaliacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroTreinamento.resx">
+      <DependentUpon>FormCadastroTreinamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormManual.resx">
+      <DependentUpon>FormManual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMLE.en.resx">
+      <DependentUpon>FormMLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMLE.resx">
+      <DependentUpon>FormMLE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReconfiguracaoRede.en.resx">
+      <DependentUpon>FormReconfiguracaoRede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReconfiguracaoRede.resx">
+      <DependentUpon>FormReconfiguracaoRede.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorioAvaliacao.en.resx">
+      <DependentUpon>FormRelatorioAvaliacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReordenarCriterios.en.resx">
+      <DependentUpon>FormReordenarCriterios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReordenarCriterios.resx">
+      <DependentUpon>FormReordenarCriterios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdicionarManobra.resx">
+      <DependentUpon>FormAdicionarManobra.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelecionarAvaliacao.en.resx">
+      <DependentUpon>FormSelecionarAvaliacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelecionarAvaliacao.resx">
+      <DependentUpon>FormSelecionarAvaliacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelecionarLinhaDefeito.en.resx">
+      <DependentUpon>FormSelecionarLinhaDefeito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelecionarTempo.en.resx">
+      <DependentUpon>FormSelecionarTempo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelecionarTempo.resx">
+      <DependentUpon>FormSelecionarTempo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelecionarLinhaDefeito.resx">
+      <DependentUpon>FormSelecionarLinhaDefeito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTeste1.en.resx">
+      <DependentUpon>FormTeste1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTeste1.resx">
+      <DependentUpon>FormTeste1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRelatorioAvaliacao.resx">
+      <DependentUpon>FormRelatorioAvaliacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTesteFuzzy.resx">
+      <DependentUpon>FormTesteFuzzy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTesteGrafo.resx">
+      <DependentUpon>FormTesteGrafo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ucDiagramaUnifilar.en.resx">
+      <DependentUpon>ucDiagramaUnifilar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDiagramaUnifilar.resx">
+      <DependentUpon>ucDiagramaUnifilar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMatriz.en.resx">
+      <DependentUpon>ucMatriz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucMatriz.resx">
+      <DependentUpon>ucMatriz.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\addUser32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avaliacao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\teste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MatrizMLE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Simple Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucArvoreDeCriterios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucFolhaExtra.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucFolhaArvore.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ucTesteGrafo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsWPF\Simple Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControlsWPF\ucArvoreSubtransmissao.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsWPF\ucTextBoxReadOnly.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagem.PNG" />
+    <None Include="Resources\erro16px.png" />
+    <None Include="Resources\erro20px.png" />
+    <None Include="Resources\acerto20px.png" />
+    <None Include="Resources\acerto16px.png" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\disc.png" />
+    <None Include="Resources\arrow_up.png" />
+    <None Include="Resources\arrow_down.png" />
+    <Resource Include="Resources\caso01.png" />
+    <Resource Include="Resources\caso02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OpenFile\OpenFile.csproj">
+      <Project>{d1fd571b-6d5a-4201-a4a0-1bc5877ed62a}</Project>
+      <Name>OpenFile</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

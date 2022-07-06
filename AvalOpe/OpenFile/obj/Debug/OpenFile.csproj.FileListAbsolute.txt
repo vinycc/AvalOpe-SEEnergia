@@ -1,0 +1,8 @@
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\bin\Debug\OpenFile.dll
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\bin\Debug\OpenFile.pdb
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\bin\Debug\Excel.dll
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\bin\Debug\Excel.xml
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\obj\Debug\OpenFile.csprojResolveAssemblyReference.cache
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\obj\Debug\OpenFile.dll
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\obj\Debug\OpenFile.pdb
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\OpenFile\bin\Debug\LINQtoCSV.dll

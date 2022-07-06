@@ -1,0 +1,18 @@
+c:\users\alex rese\documents\visual studio 2015\Projects\interfaceClips\interfaceClips\bin\Debug\interfaceClips.exe.config
+c:\users\alex rese\documents\visual studio 2015\Projects\interfaceClips\interfaceClips\bin\Debug\interfaceClips.exe
+c:\users\alex rese\documents\visual studio 2015\Projects\interfaceClips\interfaceClips\bin\Debug\interfaceClips.pdb
+c:\users\alex rese\documents\visual studio 2015\Projects\interfaceClips\interfaceClips\obj\Debug\interfaceClips.csprojResolveAssemblyReference.cache
+c:\users\alex rese\documents\visual studio 2015\Projects\interfaceClips\interfaceClips\obj\Debug\interfaceClips.Form1.resources
+c:\users\alex rese\documents\visual studio 2015\Projects\interfaceClips\interfaceClips\obj\Debug\interfaceClips.Properties.Resources.resources
+c:\users\alex rese\documents\visual studio 2015\Projects\interfaceClips\interfaceClips\obj\Debug\interfaceClips.csproj.GenerateResource.Cache
+c:\users\alex rese\documents\visual studio 2015\Projects\interfaceClips\interfaceClips\obj\Debug\interfaceClips.exe
+c:\users\alex rese\documents\visual studio 2015\Projects\interfaceClips\interfaceClips\obj\Debug\interfaceClips.pdb
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\interfaceClips\interfaceClips\bin\Debug\interfaceClips.exe.config
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\interfaceClips\interfaceClips\obj\Debug\interfaceClips.exe
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\interfaceClips\interfaceClips\obj\Debug\interfaceClips.pdb
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\interfaceClips\interfaceClips\bin\Debug\interfaceClips.exe
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\interfaceClips\interfaceClips\bin\Debug\interfaceClips.pdb
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\interfaceClips\interfaceClips\obj\Debug\interfaceClips.csprojResolveAssemblyReference.cache
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\interfaceClips\interfaceClips\obj\Debug\interfaceClips.Form1.resources
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\interfaceClips\interfaceClips\obj\Debug\interfaceClips.Properties.Resources.resources
+C:\Users\paulo\Documents\Visual Studio 2015\Projects\AvalOpe\clipsInterface\interfaceClips\interfaceClips\obj\Debug\interfaceClips.csproj.GenerateResource.Cache

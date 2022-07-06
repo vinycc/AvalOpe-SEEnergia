@@ -1,0 +1,17 @@
+Sequencia,Tempo,Objeto,CodigoObjeto,Acao
+1,00:00,DJ,CB_01,Abrir
+2,00:30,RE,3,Abrir
+3,00:32,RE,4,Fechar
+4,00:33,KS,6,Abrir
+5,00:35,RE,3,Fechar
+6,00:40,KS,2,Abrir
+7,00:45,RE,1,Fechar
+8,00:46,x,x,Solicitar inspeção entre chaves KS 02 e  KS 01
+9,01:01,x,x,A falta é detectada entre as chaves KS 02 e  KS 01
+10,01:36,x,x,O problema é resolvido
+11,01:37,x,x,Abrir
+12,01:42,x,x,Fechar
+13,01:43,x,x,Ligar
+14,02:03,x,x,Abrir
+15,02:08,x,x,Fechar
+16,02:28,x,x,Todos consumidores tem energia
